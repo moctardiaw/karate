@@ -1,0 +1,9 @@
+<testsuite failures="0" name="features/firstTest.feature" skipped="0" tests="1" time="0.339554">
+  <testcase classname="features.firstTest" name="get status response" time="0.339554">
+    <system-out>Given url urlServeur ...................................................... passed
+And request  data :[{'first_name' : 'George'}] ............................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>

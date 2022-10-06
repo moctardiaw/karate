@@ -1,0 +1,31 @@
+<testsuite failures="1" name="src/test/resources/features/firstTest.feature" skipped="0" tests="2" time="0.891777">
+  <testcase classname="src.test.resources.features.firstTest" name="get status response" time="0.011794">
+    <failure message="firstTest.feature:5 - evaluation (js) failed: urlServeur, javax.script.ScriptException: ReferenceError: &quot;urlServeur&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:477)">Given url urlServeur ...................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: firstTest.feature:5 - evaluation (js) failed: urlServeur, javax.script.ScriptException: ReferenceError: "urlServeur" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:477)&#13;
+	at ✽.Given url urlServeur (firstTest.feature:5)&#13;
+
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+And print response ........................................................ skipped</failure>
+  </testcase>
+  <testcase classname="src.test.resources.features.firstTest" name="get status response" time="0.879983">
+    <system-out>Given url urlServeur ...................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: firstTest.feature:5 - evaluation (js) failed: urlServeur, javax.script.ScriptException: ReferenceError: "urlServeur" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.scripting.nashorn/jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:477)&#13;
+	at ✽.Given url urlServeur (firstTest.feature:5)&#13;
+
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+And print response ........................................................ skipped
+Given url 'https://reqres.in/api/users?page=1' ............................ passed
+And request  data :[{'first_name' : 'George'}] ............................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+</testsuite>
